@@ -3,6 +3,7 @@ import Nav from '../Components/navbar';
 import Post from '../Components/post';
 import TextInput from '../Components/TextInput';
 import { loginUser } from '../api/user';
+import { TOKEN } from '../constatnt';
 
 
 const Auth = () => {
@@ -18,7 +19,8 @@ const Auth = () => {
                 <TextInput title={"Пароль"} value={password} setValue={setPassword}/>
                 <button onClick={() => {
                     loginUser(login, password).then((value: any) => {
-                        console.log(value)
+                        const token = value.token
+                        localStorage.setItem(TOKEN, token)
                     })
                 }}>Войти</button>
             </div>

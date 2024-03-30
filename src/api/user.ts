@@ -12,3 +12,7 @@ export async function loginUser(email: string, password: string) {
     const json = await response.json()
     return json
 }
+
+export async function getUser() {
+    const response = await fetch(`${API_URL}/user`)
+}
