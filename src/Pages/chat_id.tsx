@@ -56,6 +56,7 @@ const Chat_id = () => {
                 getMessages(id).then((value)=>{
                     setMessages(value.reverse())
                 })
+                setInput("")
             }}>Отправить</button>
         </div>
     </div>
