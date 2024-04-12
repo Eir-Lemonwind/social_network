@@ -7,10 +7,10 @@ interface props {
 
 function Post(props: props) {
     return (
-        <div className="post"> 
-        {props.title}
+        <div className="post">
+          <div className="post_title">{props.title}</div> 
         
-        <div>{props.content}</div>
+        <div className="post_content">{props.content}</div>
         </div>
     );
   }

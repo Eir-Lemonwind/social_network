@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 .container {
     display: flex;
 } 
@@ -9,6 +13,7 @@
     border-style: solid;
     width: 700px; 
     height: 200px;
+    margin: 1em;
 }
 #blue {
     background-color: #0070a0;
@@ -99,4 +104,30 @@
     font-size: 25px;
 
 }
-
+.chat{
+    border-style: solid;
+    width: 700px; 
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 1em;
+}
+.post_title {
+    font-weight: 700;
+    font-size: 25px;
+}
+.post_content {
+    text-align: left;
+    position: relative;
+    left: 10px;
+}
+.chat:hover {
+    cursor: pointer;
+    border-color: lightblue;
+}
+.chat_button {
+    width: 160px;
+    font-size: 25px;
+    
+}

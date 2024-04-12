@@ -17,16 +17,13 @@ const News = () => {
     // var post3 = "Ребята, на следующей неделе мы проводим конкурс, по названию понятно какой. На забудьте взять с собой карандаши, линейки и плутоний, украденный с ближайшей военной части. Всем успехов!"
     return (
         <center>
+            
         <div>
-            НОВОСТИ
+            <p style={{fontSize: "35px", fontWeight: 700}}> НОВОСТИ </p>
+            
             {posts.map((post: any) =>
                 <Post title={post.title} content={post.text}/>
             )}
-            {/* <Post title={"Концерт в лицее"} content = {post1}/>
-
-            <Post title={"Отмена урока обществознания"} content = {post2}/>
-
-            <Post title={"Конкурс на лучший самодельный ядерный реактор"} content = {post3}/> */}
         </div>
         </center>
     );

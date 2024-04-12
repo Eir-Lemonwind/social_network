@@ -14,7 +14,7 @@ function Contentum() {
         <Route path={'/profile'} element={<Profile/>}/>
         <Route path={'/auth'} element={<Auth/>}/>
         <Route path={'/add'} element={<Addpost/>}/>
-        <Route path={'/chats/:chat_id'}/>
+        <Route path={'/chat/:id'}/>
       </Routes>
     </div>);
 }
