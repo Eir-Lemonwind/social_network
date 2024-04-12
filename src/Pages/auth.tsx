@@ -4,11 +4,13 @@ import Post from '../Components/post';
 import TextInput from '../Components/TextInput';
 import { loginUser } from '../api/user';
 import { TOKEN } from '../constatnt';
+import {useNavigate} from "react-router-dom";
 
 
 const Auth = () => {
     const [login, setLogin] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate()
 
 
     return (
@@ -22,6 +24,7 @@ const Auth = () => {
                         const token = value.token
                         localStorage.setItem(TOKEN, token)
                     })
+                    navigate(`/`)
                 }}>Войти</button>
             </div>
         </div>
