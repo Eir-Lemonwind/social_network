@@ -1,0 +1,29 @@
+.chat_page {
+    position: relative;
+    width: 100%;
+    height: calc(100vh-80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.chat_page input{
+    width: 100%;
+}
+
+.message_container{
+    width:100%;
+    max-width: 800px;
+    overflow-y: scroll;
+    height: calc(100vh - 32px - 80px - 64px);
+    position: relative;
+    padding: 16px;
+}
+
+.message_header {
+    height: 64px;
+    width: 100%;
+    text-align: center;
+
+}

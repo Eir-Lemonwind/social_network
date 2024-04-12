@@ -5,6 +5,7 @@ import Profile from '../Pages/profile';
 import News from '../Pages/news';
 import Auth from '../Pages/auth'; 
 import Addpost from '../Pages/addpost';
+import Chat_id from '../Pages/chat_id';
 
 function Contentum() {
     return(<div id = "content">
@@ -14,7 +15,7 @@ function Contentum() {
         <Route path={'/profile'} element={<Profile/>}/>
         <Route path={'/auth'} element={<Auth/>}/>
         <Route path={'/add'} element={<Addpost/>}/>
-        <Route path={'/chat/:id'}/>
+        <Route path={'/chat/:id'} element={<Chat_id/>}/>
       </Routes>
     </div>);
 }
