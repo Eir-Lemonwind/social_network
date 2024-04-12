@@ -33,7 +33,7 @@ const Chat = () => {
         }} className = "chat_button"> Создать чат </button>
         </div>
         {chats.map((chat: any) =>
-        <div className = "chat" onClick={() => {navigate(`/profile`)}}>
+        <div className = "chat" onClick={() => {navigate(`/chat/${chat.id}`)}}>
             {chat.name}
         </div>
         )}

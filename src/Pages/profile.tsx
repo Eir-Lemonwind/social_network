@@ -6,8 +6,8 @@ const Profile = () => {
     return (
     <div>
        <div id = "profpic2"> <img src = {require("../Components/profpic.jpg")} height="150" width="150"/> </div>
-       <div id = "profname">Иван Неумоев</div>
-       <div id = "status">Ученик [10Г2] </div>
+       <div id = "profname">Владимир Ястребов</div>
+       <div id = "status">Ученик [10И2]</div>
        <div id = "friends">
         <p>Друзья</p>
         <img src = {require("../Components/profpic.jpg")} height="60" width="60"/> 
