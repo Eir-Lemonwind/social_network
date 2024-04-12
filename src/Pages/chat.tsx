@@ -26,7 +26,11 @@ const Chat = () => {
         <p></p> 
         <div style={{display: "flex", flexDirection: "row", justifyContent: "end", gap: "16px", marginRight: "48px"}}>
         <TextInput title = {""} value={name} setValue={setName}/>
-        <button onClick={()=>{createChat(name)}} className = "chat_button"> Создать чат </button>
+        <button onClick={async()=>{await createChat(name)
+        getChats().then((value: any) => {
+            setChats(value)
+        })
+        }} className = "chat_button"> Создать чат </button>
         </div>
         {chats.map((chat: any) =>
         <div className = "chat" onClick={() => {navigate(`/profile`)}}>

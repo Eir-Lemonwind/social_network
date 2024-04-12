@@ -3,7 +3,7 @@ import { API_URL } from "./utils";
 export async function getChats() {
     const response = await fetch(`${API_URL}/chat/1`)
     const json = await response.json()
-    return json.rows
+    return json
 }
 
 export async function createChat(name: string) {
